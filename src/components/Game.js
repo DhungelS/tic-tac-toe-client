@@ -54,6 +54,7 @@ const Game = () => {
 
   const resetGame = () => {
     setWinner(null);
+    setIsDraw(null);
     setCells(Array(9).fill(""))
   }
 
@@ -106,6 +107,13 @@ const Game = () => {
         <>
           <p>{winner} is the winner</p>
           <button onClick={() => resetGame()}>Play again!</button>
+        </>
+      )}
+      {
+      isDraw &&(
+        <>
+        <p>It's a tie!</p>
+        <button onClick={() => resetGame()}>Play again!</button>
         </>
       )}
     </>
