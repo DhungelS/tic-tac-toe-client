@@ -1,7 +1,31 @@
 const Game = () => {
+
+  const Cell = () => {
+    return <td>-</td>
+  }
+  
+
   return (
     <div>
-      <h1>Tic Tac Toe</h1>
+      <table>
+        <tbody>
+          <tr>
+            <Cell/>
+            <Cell/>
+            <Cell/>
+          </tr>
+          <tr>
+            <Cell/>
+            <Cell/>
+            <Cell/>
+          </tr>
+          <tr>
+            <Cell/>
+            <Cell/>
+            <Cell/>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
