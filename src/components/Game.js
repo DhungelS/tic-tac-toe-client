@@ -110,7 +110,7 @@ const Game = () => {
         </>
       )}
       {
-      isDraw &&(
+      isDraw && !winner && (
         <>
         <p>It's a tie!</p>
         <button onClick={() => resetGame()}>Play again!</button>
